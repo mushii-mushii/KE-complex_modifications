@@ -1,0 +1,25 @@
+{
+  "title": "End key acts as ⌘P (Print)",
+  "rules": [
+    {
+      "description": "End key prints just like Command+P",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "end",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": ["left_command"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
